@@ -8,7 +8,7 @@ st.write('')
 col1, col2, col3, col4 = st.columns([0.035, 0.15, 0.45, 0.1])
 
 with col1:
-    st.image('./data/최종사진.png, width=30) 
+    st.image('./data/최종사진.png', width=30) 
 with col2:
     st.markdown("**C431195 이준성**")
 
