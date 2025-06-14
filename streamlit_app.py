@@ -55,8 +55,13 @@ st.text('일단 시간대별 교통량을 알아야 한다. 앞서 살펴본 교
 st.write('')
 st.write('')
 import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+font_path = "fonts/malgun-gothic.ttf"
+fontprop = fm.FontProperties(fname=font_path)
 
-plt.rcParams['font.family'] = 'AppleGothic'  # 한글 폰트 설정
+# matplotlib 한글 설정
+plt.rc('font', family=fontprop.get_name())
+plt.rcParams['axes.unicode_minus'] = False
 
 time_labels = [
     "00-01", "01-02", "02-03", "03-04", "04-05", "05-06", "06-07", "07-08", "08-09", "09-10",
@@ -71,9 +76,9 @@ traffic_volume = [
 
 plt.figure(figsize=(12, 6))
 plt.bar(time_labels, traffic_volume)
-plt.title("서울시 시간대별 교통량 (주중)", fontsize=16)
-plt.xlabel("시간대")
-plt.ylabel("교통량(천 대)")
+plt.title("서울시 시간대별 교통량 (주중)", fontproperties=fontprop)
+plt.xlabel("시간대", fontproperties=fontprop)
+plt.ylabel("교통량(천 대)", fontproperties=fontprop)
 plt.xticks(rotation=45)
 plt.tight_layout()
 st.pyplot(plt)
