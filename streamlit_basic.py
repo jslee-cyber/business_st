@@ -7,9 +7,8 @@ st.write('')
 # 프로필 사진 + 작성자 정보 (왼쪽 정렬)
 col1, col2, col3, col4 = st.columns([0.035, 0.15, 0.45, 0.1])
 
-image_path = "/Users/junsunglee/Desktop/프로그래밍/과제/Python_st/최종사진.png"
 with col1:
-    st.image(image_path, width=30) 
+    st.image('data/최종사진.png, width=30) 
 with col2:
     st.markdown("**C431195 이준성**")
 
@@ -25,8 +24,7 @@ st.write('')
 st.write('##### "지금 서울에 차가 몇 대나 있을까?"\n')
 st.write('')
 
-image_path = "/Users/junsunglee/Desktop/프로그래밍/과제/Python_st/1920px.jpg"
-st.image(image_path, caption='가끔은 걷는 게 빠를 것 같다는 생각이 든다. (사진= flickr)', use_container_width=True)
+st.image('data/1920px.jpg', caption='가끔은 걷는 게 빠를 것 같다는 생각이 든다. (사진= flickr)', use_container_width=True)
 st.write('')
 st.write('')
 st.write("###### 가장 막히는 때, 서울에 차가 몇 대 있는지 알 수 있는 방법은 없을까?\n측정하기 어려운 정보라 그런지, 아무리 검색해도 찾을 수가 없었다. 여기저길 헤매던 중, 마침 서울시에서 교통량을 전수조사해 공개한 자료를 발견했다.\n바로 TOPIS(서울시 교통정보센터)에서 제공하는 <2023 서울시 교통량 조사자료>. 궁금하면 아래 링크로 들어가 연도별 통계를 살펴보자. ")
@@ -116,13 +114,10 @@ st.text('교통사고 또한 교통체증과 밀접한 관련이 있다. 교통�
 st.write('')
 st.write('')
 st.write('')
-
-image_path = "/Users/junsunglee/Desktop/프로그래밍/과제/Python_st/폰테베드라.jpeg"
-st.image(image_path, caption='차 없는 도시, 스페인의 폰테베드라. (사진= Planetizen)', use_container_width=True)
+st.image('data/폰테베드라.jpeg', caption='차 없는 도시, 스페인의 폰테베드라. (사진= Planetizen)', use_container_width=True)
 st.write('')
 st.write('')
-image_path = "/Users/junsunglee/Desktop/프로그래밍/과제/Python_st/꾸리찌바.jpeg"
-st.image(image_path, caption='버스로 모든 것을 대체한 브라질의 꾸리찌바. (사진= ETRI WEBZINE)', use_container_width=True)
+st.image('data/꾸리찌바.jpeg', caption='버스로 모든 것을 대체한 브라질의 꾸리찌바. (사진= ETRI WEBZINE)', use_container_width=True)
 st.write('')
 st.write('')
 st.write('')
