@@ -39,7 +39,7 @@ st.text('자료를 살펴보니 다음과 같은 내용을 알 수 있었다.')
 st.write('')
 col1, col2, col3 = st.columns(3) # 3개의 컬럼 생성
 col1.metric ("서울시 일평균 교통량", "1026.5만 대") 
-col2.metric("수집지점(모든 주요도로)", "139개") 
+col2.metric("수집지점(주요도로) 개수", "139개") 
 col3.metric("주요도로 당 평균 차선 개수", "8차선")
 
 st.write('')
